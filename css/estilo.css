@@ -1,0 +1,588 @@
+/*
+* 
+* @author Emily Santos
+
+*/
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: 
+        url(../imagens/ruido.png),
+        linear-gradient(30deg, #ffcc40a1, #4d08bb71, #c6a0ff75, #4d08bb71, #ffcc40a1), url(../imagens/capa_ana.jpeg);
+    background-attachment: fixed;
+}
+nav.navbar-transparente {
+    background: #3414628f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.divisor {
+    width: 1px;
+    background-color: white;
+    margin: 12px 15px;
+}
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+    background: #7c25f8;
+    color: #fff;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background: white;
+    color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.caixa {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto-titulo {
+    color: #F2C335;
+    font-family: aladdin;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 120px;
+    /*text-shadow: 0.1em 0.2em 0.3em black;*/
+    text-shadow:  
+    1px -1px 0 #e0b531, 
+    2px -2px 0 #caa32c, 
+    3px -3px 0 #bb972a, 
+    4px -4px 0 #aa8927, 
+    5px -5px 0 #9b7d23, 
+    6px -6px 0 #856b1e, 
+    7px -7px 0 #705a19, 
+    8px -8px 0 #614e16, 
+    9px -9px 0 #504013, 
+    10px -10px 0 #3b2f0e, 
+    11px -11px 0 #29210a, 
+    12px -12px 0 #1b1607, 
+    13px -13px 12px rgba(0, 0, 0, 0.55), 
+    13px -13px 1px rgba(0, 0, 0, 0.5);
+}
+
+#convites, #presentes {
+    background: #b58cdf;
+}
+
+#convites img {
+    border-radius: 30px;
+}
+
+#convites h2, #contagemRegressiva h2, #presentes h2, #presenca h2{
+    color: #fff;
+    font-family: aladdin;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 70px;
+    text-shadow: 0.1em 0.2em 0.3em black;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    margin-top: 100px;
+    width: 900px;
+    padding: 20px;
+}
+
+#convites h3 {
+    color: #fff;
+}
+
+#convites p, #presentes h3 {
+    color: #541ba7;
+    font-weight: 600;
+}
+
+#contagemRegressiva h3 {
+    color: white;
+}
+
+#presenca p {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+#presenca span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.formulario {
+    background-color: #8c6ca5b3;
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0.2em 0.3em 0.4em black;
+}
+
+#contagemRegressiva {
+    color: white;
+}
+
+#minutes, #hours, #seconds, #days {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+#presenca h3 {
+    color: white;
+}
+
+.albuns {
+    justify-content: center;
+}
+
+.mapa {
+    width: 100%;
+}
+
+.box {
+    margin: 10px;
+    width: 600px;
+}
+
+.boxinho {
+    margin: 10px;
+}
+
+.vestimenta {
+    height: 600px;
+    max-width: 200%;
+}
+
+img.relogio {
+    max-width: 300%;
+    height: auto;
+    margin-left: 300px;
+    margin-top: 0px;
+}
+
+img.relogio:hover {
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    height: auto;
+    margin-left: 300px;
+    margin-top: 0px;
+}
+
+.rotacionar {
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    margin-top: -200px;
+    margin-bottom: 300px;
+}
+
+.rotacionar_dois {
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    margin-top: -350px;
+    margin-bottom: -350px;
+    margin-left: 20px;
+}
+
+@keyframes fadein {
+    from { opacity: 0.3; width: 250px; }
+    to   { opacity: 1; width: 260px;}
+}
+
+.rotacionar_dois:hover {
+    z-index: 1;
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    margin-top: -350px;
+    margin-bottom: -350px;
+    margin-left: 0px;
+    animation: fadein 1s infinite alternate;
+}
+
+.lampada {
+    z-index: 2;
+    position: relative;
+    margin-left: -30px;
+    margin-top: 150px;
+    margin-bottom: -120px;
+    margin-right: -300px;
+}
+
+.img-presentes {
+    border: 5px solid white;
+    border-radius: 100%;
+    box-shadow: 0.2em 0.3em 0.4em #6207e3;
+}
+
+.img-presentes:hover {
+    border: 5px solid white;
+    width: 180px;
+    border-radius: 100%;
+    box-shadow: 0.2em 0.3em 0.4em #6207e3;
+}
+
+#presentes p {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.presente {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #3414628f;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.icone {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    background-color: #7b5898;
+    border-radius: 100%;
+}
+
+.icone:hover {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    background-color: #F2C335;
+    border-radius: 100%;
+}
+
+.icone_insta {
+    height: 48px;
+    width: 48px;
+    padding: 4px;
+    background-color: #7b5898;
+    border-radius: 20%;
+}
+
+.icone_insta:hover {
+    height: 48px;
+    width: 48px;
+    padding: 4px;
+    background-color: #F2C335;
+    border-radius: 20%;
+}
+
+footer h4 a {
+    color: #F2C335;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer h4 a:hover {
+    color: #7b5898;
+    text-decoration: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+@media (max-width: 575.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+        
+    .texto-titulo {
+        font-size: 80px;
+        margin: 30px;
+    }
+    
+    .boxinho {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .box {
+        margin: 0px;
+    }
+    
+    .countdown {
+        margin-top: 100px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .img-presentes {
+        width: 120px;
+        margin-left: 20px;
+        border: 5px solid white;
+        border-radius: 100%;
+        box-shadow: 0.2em 0.3em 0.4em #6207e3;
+    }
+
+    .sonhos {
+        order: 2;
+        display: initial;
+    }
+
+    .presentes {
+        order: 1;
+        display: initial;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+
+    .lampada {
+        visibility: hidden;
+        margin-bottom: -200px;
+    }
+
+    .rotacionar_dois {
+        visibility: hidden;
+    }
+
+    #presentes {
+        height: 1000px;
+    }
+
+    .form-control-lg {
+        font-size: 1rem;
+    }
+
+    footer ul li {
+        display: inline-flex;
+        margin: 5px;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        padding: 0px;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+        
+    .texto-titulo {
+        font-size: 80px;
+        margin: 30px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+        
+    .container {
+        max-width: 100%;
+    }
+
+    .boxinho {
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+
+    .rotacionar_dois {
+        -ms-transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+        margin-top: -350px;
+        margin-bottom: -750px;
+        margin-left: -20px;
+        margin-right: 300px;
+        width: 200px;
+    }
+
+    .lampada {
+        width: 450px;
+        z-index: 2;
+        position: relative;
+        margin-left: -30px;
+        margin-top: 150px;
+        margin-bottom: -120px;
+        margin-right: -350px;
+    }
+
+    .texto-titulo {
+        font-size: 140px;
+    }
+
+    .countdown {
+        margin-top: 100px;
+        width: 750px;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .presente {
+        height: 130px;
+        margin-top: 50px;
+    }
+
+    .lampada {
+        margin-left: 40px;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0.3; }
+        to   { opacity: 1;}
+    }
+
+    .rotacionar_dois:hover {
+        z-index: 1;
+        margin-top: 0px;
+        margin-bottom: -390px;
+        margin-left: -30px;
+        animation: fadein 1s infinite alternate;
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+    
+    .rotacionar_dois {
+        -ms-transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+        margin-top: -350px;
+        margin-bottom: -360px;
+        margin-left: 20px;
+        width: 230px;
+        margin-right: 10px;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0.3; width: 250px; }
+        to   { opacity: 1; width: 260px;}
+    }
+
+    .rotacionar_dois:hover {
+        z-index: 1;
+        -ms-transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+        margin-top: -350px;
+        margin-bottom: -350px;
+        margin-left: 0px;
+        animation: fadein 1s infinite alternate;
+    }
+
+    .lampada {
+        z-index: 2;
+        position: relative;
+        margin-left: -30px;
+        margin-top: 150px;
+        margin-bottom: -120px;
+        margin-right: -200px;
+        width: 400px;
+    }
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    h1 {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 1400px) {
+
+}
+
+/* presença confirmada */
+
+#presenca_confirmada {
+    margin-top: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#presenca_confirmada h2 {
+    color: #541ba7;
+}
